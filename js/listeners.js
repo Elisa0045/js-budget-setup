@@ -4,14 +4,13 @@ function eventListeners() {
   const expenseList = document.getElementById("expense-list");
   const ui = new UI();
   handler.ui = ui;
+  //budget form
   budgetForm.addEventListener("submit", (event) => {
     handler.budgetForm();
-    //ui.submitBudgetForm()
-    //console.log("submit test 1");
   });
-  expenseForm.addEventListener("submit", function (event) {
-    console.log("click test 2");
-    event.preventDefault();
+  //expense form
+  expenseForm.addEventListener("submit", (event) => {
+    handler.expenseForm();
   });
   expenseList.addEventListener("click", function () {
     console.log("click test 1");

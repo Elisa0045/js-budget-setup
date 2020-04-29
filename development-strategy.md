@@ -21,5 +21,7 @@ Building this site one step at a time
 > * The user can add a budget in the application in the input 'Please Enter Your Budget' the value has to be more than cero (empty value or negative) the user will be notified in case of an input error, if the amount is correct that will be loaded in the screen, and the final balance will be calculated. 
 > * I wrote in `ui.js` `handlers.js`, the functions that allows to adding a budget and process. 
 
+# 3. User Story: `Expense Method` 
 
-
+> * The user can add a expense in the application, the expense has to be more than cero (empty value or negative) the user will be notified in case of an input error, if the amount is correct that will be loaded in the screen, and the final balance will be update.
+> * I wrote in `ui.js` `handlers.js`, the functions that allows to add a expense and process, the handler calls the function responsible of adding an expense and process the form inputs.
