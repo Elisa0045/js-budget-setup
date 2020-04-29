@@ -3,9 +3,10 @@ function eventListeners() {
   const expenseForm = document.getElementById("expense-form");
   const expenseList = document.getElementById("expense-list");
   const ui = new UI();
-  budgetForm.addEventListener("submit", function (event) {
-    event.preventDefault();
-    ui.submitBudgetForm()
+  handler.ui = ui;
+  budgetForm.addEventListener("submit", (event) => {
+    handler.budgetForm();
+    //ui.submitBudgetForm()
     //console.log("submit test 1");
   });
   expenseForm.addEventListener("submit", function (event) {
