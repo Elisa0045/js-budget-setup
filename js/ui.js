@@ -31,6 +31,31 @@ class UI {
 
         this.budgetFeedback.classList.remove("showItem");
       }, 4000);
+    } else {
+      this.budgetAmount.textContent = val;
+      this.budgetInput.value = "";
+      this.showBalance();
     }
+  }
+  //show balance
+  showBalance() {
+    const expense = this.totalExpense();
+    const total = parseInt(this.budgetAmount.textContent) - expense;
+    this.balanceAmount.textContent = total;
+    if (total < 0) {
+      this.balance.classList.remove("showGreen", "showBlack");
+      this.balance.classList.add("showRed");
+    } else if (total > 0) {
+      this.balance.classList.remove("showRed", "showBlack");
+      this.balance.classList.add("showGreen");
+    } else if (total === 0) {
+      this.balance.classList.remove("showRed", "showGreen ");
+      this.balance.classList.add("showBlack ");
+    }
+  }
+  // total expense
+  totalExpense() {
+    let total = 400;
+    return total;
   }
 }
