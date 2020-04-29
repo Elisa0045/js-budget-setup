@@ -19,6 +19,12 @@ var handler = {
     });
   }, //expense list
   expenseList() {
+    if (event.target.parentElement.classList.contains("edit-icon")) {
+      this.ui.editExpense(event.target.parentElement);
+    } else if (event.target.parentElement.classList.contains("delete-icon")) {
+      this.ui.deleteExpense(event.target.parentElement);
+    }
+
     log.push({
       handler: "expenseList",
       object: JSON.parse(JSON.stringify(this.ui)),

@@ -11,6 +11,7 @@ Building this site one step at a time
 > * `img`: Assets of the webpage image elements.
 > * `/css/all.css`: Font Awesome Free 5.3.1
 > * `/css/main.css`:CSS stylesheet for styling the HTML elements.
+
 ## 1. Data & Log
 
 > * `ui.js` `log.js` `listeners.js` `handlers.js`: 
@@ -25,3 +26,8 @@ Building this site one step at a time
 
 > * The user can add a expense in the application, the expense has to be more than cero (empty value or negative) the user will be notified in case of an input error, if the amount is correct that will be loaded in the screen, and the final balance will be update.
 > * I wrote in `ui.js` `handlers.js`, the functions that allows to add a expense and process, the handler calls the function responsible of adding an expense and process the form inputs.
+
+# 4. User Story: `Edith Expense` 
+
+> * The user can edit a expense in the list, and change the amount or the name of the expense.
+> * I wrote in `ui.js` `handlers.js`, the functions that allows to edit a expense and process, the handler calls the function responsible of editing an expense and process.

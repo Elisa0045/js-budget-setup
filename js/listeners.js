@@ -11,9 +11,9 @@ function eventListeners() {
   //expense form
   expenseForm.addEventListener("submit", (event) => {
     handler.expenseForm();
-  });
-  expenseList.addEventListener("click", function () {
-    console.log("click test 1");
+  }); //expense list 
+  expenseList.addEventListener("click", (event) => {
+    handler.expenseList();
   });
 }
 
