@@ -102,16 +102,21 @@ class UI {
   }
   //edit expense
   editExpense(element) {
-    let id = parseInt(element.dataset.id);
-    let parent = element.parentElement.parentElement.parentElement;
-    this.expenseList.removeChild(parent); //remove from the DOM
-    let expense = this.itemList.filter((item) => item.id === id);
-    this.expenseInput.value = expense[0].title; //show value
+    const id = parseInt(element.dataset.id);
+    const expense = this.itemList.filter((item) => item.id === id);
+    this.expenseInput.value = expense[0].title;
     this.amountInput.value = expense[0].amount;
+    this.deleteExpense(element);
+  }
+  deleteExpense(element) {
+    const id = parseInt(element.dataset.id);
+    const parent = element.parentElement.parentElement.parentElement;
+    this.expenseList.removeChild(parent);
     this.itemList = this.itemList.filter((item) => item.id !== id);
     this.showBalance();
-  } //total expense
-  deleteExpense(element) {}
+  }
+
+  //total expense
   totalExpense() {
     let total = 0;
     if (this.itemList.length > 0) {

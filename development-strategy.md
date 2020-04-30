@@ -27,7 +27,12 @@ Building this site one step at a time
 > * The user can add a expense in the application, the expense has to be more than cero (empty value or negative) the user will be notified in case of an input error, if the amount is correct that will be loaded in the screen, and the final balance will be update.
 > * I wrote in `ui.js` `handlers.js`, the functions that allows to add a expense and process, the handler calls the function responsible of adding an expense and process the form inputs.
 
-# 4. User Story: `Edith Expense` 
+# 4. User Story: `Edit Expense` 
 
 > * The user can edit a expense in the list, and change the amount or the name of the expense.
 > * I wrote in `ui.js` `handlers.js`, the functions that allows to edit a expense and process, the handler calls the function responsible of editing an expense and process.
+
+# 5. User Story: `Delete Expense` 
+
+> * The user can delete a expense from the list, so that remove the expense from the list and update the valance.
+> * I wrote in `ui.js` `handlers.js`, the functions that allows to delete a expense and process.
